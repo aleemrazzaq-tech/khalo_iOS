@@ -1,0 +1,650 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		001D17D6293B30670059CBA3 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 001D17D5293B30670059CBA3 /* ContentView.swift */; };
+		001D17D8293B30690059CBA3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 001D17D7293B30690059CBA3 /* Assets.xcassets */; };
+		001D17DB293B30690059CBA3 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 001D17DA293B30690059CBA3 /* Preview Assets.xcassets */; };
+		001D17E5293B30690059CBA3 /* KhaloTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 001D17E4293B30690059CBA3 /* KhaloTests.swift */; };
+		001D17EF293B30690059CBA3 /* KhaloUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 001D17EE293B30690059CBA3 /* KhaloUITests.swift */; };
+		001D17F1293B30690059CBA3 /* KhaloUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 001D17F0293B30690059CBA3 /* KhaloUITestsLaunchTests.swift */; };
+		001D1805293B350B0059CBA3 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 001D1803293B350B0059CBA3 /* SceneDelegate.swift */; };
+		001D1806293B350B0059CBA3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 001D1804293B350B0059CBA3 /* AppDelegate.swift */; };
+		001D1808293B35A40059CBA3 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 001D1807293B35A40059CBA3 /* Launch Screen.storyboard */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		001D17E1293B30690059CBA3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 001D17C8293B30670059CBA3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 001D17CF293B30670059CBA3;
+			remoteInfo = Khalo;
+		};
+		001D17EB293B30690059CBA3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 001D17C8293B30670059CBA3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 001D17CF293B30670059CBA3;
+			remoteInfo = Khalo;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		001D17D0293B30670059CBA3 /* Khalo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Khalo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		001D17D5293B30670059CBA3 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		001D17D7293B30690059CBA3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		001D17DA293B30690059CBA3 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		001D17E0293B30690059CBA3 /* KhaloTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KhaloTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		001D17E4293B30690059CBA3 /* KhaloTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KhaloTests.swift; sourceTree = "<group>"; };
+		001D17EA293B30690059CBA3 /* KhaloUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KhaloUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		001D17EE293B30690059CBA3 /* KhaloUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KhaloUITests.swift; sourceTree = "<group>"; };
+		001D17F0293B30690059CBA3 /* KhaloUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KhaloUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		001D1803293B350B0059CBA3 /* SceneDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		001D1804293B350B0059CBA3 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		001D1807293B35A40059CBA3 /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
+		001D1809293B38150059CBA3 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		001D17CD293B30670059CBA3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		001D17DD293B30690059CBA3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		001D17E7293B30690059CBA3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		001D17C7293B30670059CBA3 = {
+			isa = PBXGroup;
+			children = (
+				001D17D2293B30670059CBA3 /* Khalo */,
+				001D17E3293B30690059CBA3 /* KhaloTests */,
+				001D17ED293B30690059CBA3 /* KhaloUITests */,
+				001D17D1293B30670059CBA3 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		001D17D1293B30670059CBA3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				001D17D0293B30670059CBA3 /* Khalo.app */,
+				001D17E0293B30690059CBA3 /* KhaloTests.xctest */,
+				001D17EA293B30690059CBA3 /* KhaloUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		001D17D2293B30670059CBA3 /* Khalo */ = {
+			isa = PBXGroup;
+			children = (
+				001D1800293B32400059CBA3 /* Flow */,
+				001D17FF293B323A0059CBA3 /* Core */,
+				001D17FE293B32350059CBA3 /* Common */,
+				001D1801293B324A0059CBA3 /* Generated */,
+				001D17FD293B322B0059CBA3 /* Configurations */,
+				001D17D5293B30670059CBA3 /* ContentView.swift */,
+				001D1804293B350B0059CBA3 /* AppDelegate.swift */,
+				001D1803293B350B0059CBA3 /* SceneDelegate.swift */,
+				001D1809293B38150059CBA3 /* Info.plist */,
+				001D1802293B32520059CBA3 /* Resources */,
+				001D1807293B35A40059CBA3 /* Launch Screen.storyboard */,
+				001D17D9293B30690059CBA3 /* Preview Content */,
+			);
+			path = Khalo;
+			sourceTree = "<group>";
+		};
+		001D17D9293B30690059CBA3 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				001D17DA293B30690059CBA3 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		001D17E3293B30690059CBA3 /* KhaloTests */ = {
+			isa = PBXGroup;
+			children = (
+				001D17E4293B30690059CBA3 /* KhaloTests.swift */,
+			);
+			path = KhaloTests;
+			sourceTree = "<group>";
+		};
+		001D17ED293B30690059CBA3 /* KhaloUITests */ = {
+			isa = PBXGroup;
+			children = (
+				001D17EE293B30690059CBA3 /* KhaloUITests.swift */,
+				001D17F0293B30690059CBA3 /* KhaloUITestsLaunchTests.swift */,
+			);
+			path = KhaloUITests;
+			sourceTree = "<group>";
+		};
+		001D17FD293B322B0059CBA3 /* Configurations */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Configurations;
+			sourceTree = "<group>";
+		};
+		001D17FE293B32350059CBA3 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		001D17FF293B323A0059CBA3 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		001D1800293B32400059CBA3 /* Flow */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Flow;
+			sourceTree = "<group>";
+		};
+		001D1801293B324A0059CBA3 /* Generated */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Generated;
+			sourceTree = "<group>";
+		};
+		001D1802293B32520059CBA3 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				001D17D7293B30690059CBA3 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		001D17CF293B30670059CBA3 /* Khalo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 001D17F4293B30690059CBA3 /* Build configuration list for PBXNativeTarget "Khalo" */;
+			buildPhases = (
+				001D17CC293B30670059CBA3 /* Sources */,
+				001D17CD293B30670059CBA3 /* Frameworks */,
+				001D17CE293B30670059CBA3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Khalo;
+			productName = Khalo;
+			productReference = 001D17D0293B30670059CBA3 /* Khalo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		001D17DF293B30690059CBA3 /* KhaloTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 001D17F7293B30690059CBA3 /* Build configuration list for PBXNativeTarget "KhaloTests" */;
+			buildPhases = (
+				001D17DC293B30690059CBA3 /* Sources */,
+				001D17DD293B30690059CBA3 /* Frameworks */,
+				001D17DE293B30690059CBA3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				001D17E2293B30690059CBA3 /* PBXTargetDependency */,
+			);
+			name = KhaloTests;
+			productName = KhaloTests;
+			productReference = 001D17E0293B30690059CBA3 /* KhaloTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		001D17E9293B30690059CBA3 /* KhaloUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 001D17FA293B30690059CBA3 /* Build configuration list for PBXNativeTarget "KhaloUITests" */;
+			buildPhases = (
+				001D17E6293B30690059CBA3 /* Sources */,
+				001D17E7293B30690059CBA3 /* Frameworks */,
+				001D17E8293B30690059CBA3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				001D17EC293B30690059CBA3 /* PBXTargetDependency */,
+			);
+			name = KhaloUITests;
+			productName = KhaloUITests;
+			productReference = 001D17EA293B30690059CBA3 /* KhaloUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		001D17C8293B30670059CBA3 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1410;
+				LastUpgradeCheck = 1410;
+				TargetAttributes = {
+					001D17CF293B30670059CBA3 = {
+						CreatedOnToolsVersion = 14.1;
+					};
+					001D17DF293B30690059CBA3 = {
+						CreatedOnToolsVersion = 14.1;
+						TestTargetID = 001D17CF293B30670059CBA3;
+					};
+					001D17E9293B30690059CBA3 = {
+						CreatedOnToolsVersion = 14.1;
+						TestTargetID = 001D17CF293B30670059CBA3;
+					};
+				};
+			};
+			buildConfigurationList = 001D17CB293B30670059CBA3 /* Build configuration list for PBXProject "Khalo" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 001D17C7293B30670059CBA3;
+			productRefGroup = 001D17D1293B30670059CBA3 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				001D17CF293B30670059CBA3 /* Khalo */,
+				001D17DF293B30690059CBA3 /* KhaloTests */,
+				001D17E9293B30690059CBA3 /* KhaloUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		001D17CE293B30670059CBA3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				001D1808293B35A40059CBA3 /* Launch Screen.storyboard in Resources */,
+				001D17DB293B30690059CBA3 /* Preview Assets.xcassets in Resources */,
+				001D17D8293B30690059CBA3 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		001D17DE293B30690059CBA3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		001D17E8293B30690059CBA3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		001D17CC293B30670059CBA3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				001D1806293B350B0059CBA3 /* AppDelegate.swift in Sources */,
+				001D17D6293B30670059CBA3 /* ContentView.swift in Sources */,
+				001D1805293B350B0059CBA3 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		001D17DC293B30690059CBA3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				001D17E5293B30690059CBA3 /* KhaloTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		001D17E6293B30690059CBA3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				001D17F1293B30690059CBA3 /* KhaloUITestsLaunchTests.swift in Sources */,
+				001D17EF293B30690059CBA3 /* KhaloUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		001D17E2293B30690059CBA3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 001D17CF293B30670059CBA3 /* Khalo */;
+			targetProxy = 001D17E1293B30690059CBA3 /* PBXContainerItemProxy */;
+		};
+		001D17EC293B30690059CBA3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 001D17CF293B30670059CBA3 /* Khalo */;
+			targetProxy = 001D17EB293B30690059CBA3 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		001D17F2293B30690059CBA3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		001D17F3293B30690059CBA3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		001D17F5293B30690059CBA3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Khalo/Preview Content\"";
+				DEVELOPMENT_TEAM = XBUNPP8T3H;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = Khalo/Info.plist;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = "Launch Screen.storyboard";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.techilab.Khalo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		001D17F6293B30690059CBA3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Khalo/Preview Content\"";
+				DEVELOPMENT_TEAM = XBUNPP8T3H;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = Khalo/Info.plist;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = "Launch Screen.storyboard";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.techilab.Khalo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		001D17F8293B30690059CBA3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = XBUNPP8T3H;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.techilab.KhaloTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Khalo.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Khalo";
+			};
+			name = Debug;
+		};
+		001D17F9293B30690059CBA3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = XBUNPP8T3H;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.techilab.KhaloTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Khalo.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Khalo";
+			};
+			name = Release;
+		};
+		001D17FB293B30690059CBA3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = XBUNPP8T3H;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.techilab.KhaloUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Khalo;
+			};
+			name = Debug;
+		};
+		001D17FC293B30690059CBA3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = XBUNPP8T3H;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.techilab.KhaloUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Khalo;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		001D17CB293B30670059CBA3 /* Build configuration list for PBXProject "Khalo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				001D17F2293B30690059CBA3 /* Debug */,
+				001D17F3293B30690059CBA3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		001D17F4293B30690059CBA3 /* Build configuration list for PBXNativeTarget "Khalo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				001D17F5293B30690059CBA3 /* Debug */,
+				001D17F6293B30690059CBA3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		001D17F7293B30690059CBA3 /* Build configuration list for PBXNativeTarget "KhaloTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				001D17F8293B30690059CBA3 /* Debug */,
+				001D17F9293B30690059CBA3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		001D17FA293B30690059CBA3 /* Build configuration list for PBXNativeTarget "KhaloUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				001D17FB293B30690059CBA3 /* Debug */,
+				001D17FC293B30690059CBA3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 001D17C8293B30670059CBA3 /* Project object */;
+}
