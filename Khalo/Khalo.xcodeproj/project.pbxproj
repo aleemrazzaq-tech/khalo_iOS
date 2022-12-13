@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 56;
+	objectVersion = 46;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -16,10 +16,22 @@
 		001D1805293B350B0059CBA3 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 001D1803293B350B0059CBA3 /* SceneDelegate.swift */; };
 		001D1806293B350B0059CBA3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 001D1804293B350B0059CBA3 /* AppDelegate.swift */; };
 		001D1808293B35A40059CBA3 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 001D1807293B35A40059CBA3 /* Launch Screen.storyboard */; };
-		001D1821293B404B0059CBA3 /* LoginMobileNumberView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 001D1820293B404B0059CBA3 /* LoginMobileNumberView.swift */; };
-		001D1823293B40540059CBA3 /* LoginMobileNumberViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 001D1822293B40540059CBA3 /* LoginMobileNumberViewModel.swift */; };
 		001D182B293E8D200059CBA3 /* NotificationCentre.swift in Sources */ = {isa = PBXBuildFile; fileRef = 001D182A293E8D200059CBA3 /* NotificationCentre.swift */; };
 		001D182D293E8FA00059CBA3 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 001D182C293E8FA00059CBA3 /* GoogleService-Info.plist */; };
+		0050795F2948BF16005A7F91 /* PhoneNumber.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0050795E2948BF16005A7F91 /* PhoneNumber.swift */; };
+		005079612948BF22005A7F91 /* PhoneViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 005079602948BF22005A7F91 /* PhoneViewModel.swift */; };
+		005079642948BF4A005A7F91 /* OtpScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 005079632948BF4A005A7F91 /* OtpScreen.swift */; };
+		005079662948BF51005A7F91 /* OTPViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 005079652948BF51005A7F91 /* OTPViewModel.swift */; };
+		005079682948BF95005A7F91 /* CountryCodePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 005079672948BF95005A7F91 /* CountryCodePicker.swift */; };
+		0050796C2948C018005A7F91 /* Toast.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0050796B2948C018005A7F91 /* Toast.swift */; };
+		005079712948C0C3005A7F91 /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 005079702948C0C3005A7F91 /* CustomButton.swift */; };
+		005079762948C11B005A7F91 /* MainScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 005079732948C11B005A7F91 /* MainScreen.swift */; };
+		005079772948C11B005A7F91 /* ListCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 005079742948C11B005A7F91 /* ListCard.swift */; };
+		005079782948C11B005A7F91 /* MenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 005079752948C11B005A7F91 /* MenuView.swift */; };
+		0050797B2948C158005A7F91 /* CustomeTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0050797A2948C158005A7F91 /* CustomeTextField.swift */; };
+		0050797E2948C1C7005A7F91 /* CustomeNavigationBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0050797D2948C1C7005A7F91 /* CustomeNavigationBar.swift */; };
+		005079842948C25B005A7F91 /* Custome Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = 005079832948C25B005A7F91 /* Custome Card.swift */; };
+		005079862948C2AE005A7F91 /* TextFieldDesign.swift in Sources */ = {isa = PBXBuildFile; fileRef = 005079852948C2AE005A7F91 /* TextFieldDesign.swift */; };
 		420D75298FEF19FBEA6C8F52 /* Pods_Khalo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 69EE4C379336954E4059AC77 /* Pods_Khalo.framework */; };
 /* End PBXBuildFile section */
 
@@ -54,10 +66,22 @@
 		001D1804293B350B0059CBA3 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		001D1807293B35A40059CBA3 /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
 		001D1809293B38150059CBA3 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		001D1820293B404B0059CBA3 /* LoginMobileNumberView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginMobileNumberView.swift; sourceTree = "<group>"; };
-		001D1822293B40540059CBA3 /* LoginMobileNumberViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginMobileNumberViewModel.swift; sourceTree = "<group>"; };
 		001D182A293E8D200059CBA3 /* NotificationCentre.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationCentre.swift; sourceTree = "<group>"; };
 		001D182C293E8FA00059CBA3 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		0050795E2948BF16005A7F91 /* PhoneNumber.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhoneNumber.swift; sourceTree = "<group>"; };
+		005079602948BF22005A7F91 /* PhoneViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhoneViewModel.swift; sourceTree = "<group>"; };
+		005079632948BF4A005A7F91 /* OtpScreen.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OtpScreen.swift; sourceTree = "<group>"; };
+		005079652948BF51005A7F91 /* OTPViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OTPViewModel.swift; sourceTree = "<group>"; };
+		005079672948BF95005A7F91 /* CountryCodePicker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CountryCodePicker.swift; sourceTree = "<group>"; };
+		0050796B2948C018005A7F91 /* Toast.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Toast.swift; sourceTree = "<group>"; };
+		005079702948C0C3005A7F91 /* CustomButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
+		005079732948C11B005A7F91 /* MainScreen.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainScreen.swift; sourceTree = "<group>"; };
+		005079742948C11B005A7F91 /* ListCard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListCard.swift; sourceTree = "<group>"; };
+		005079752948C11B005A7F91 /* MenuView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuView.swift; sourceTree = "<group>"; };
+		0050797A2948C158005A7F91 /* CustomeTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomeTextField.swift; sourceTree = "<group>"; };
+		0050797D2948C1C7005A7F91 /* CustomeNavigationBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomeNavigationBar.swift; sourceTree = "<group>"; };
+		005079832948C25B005A7F91 /* Custome Card.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Custome Card.swift"; sourceTree = "<group>"; };
+		005079852948C2AE005A7F91 /* TextFieldDesign.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextFieldDesign.swift; sourceTree = "<group>"; };
 		2E383C6726638A27D4815F68 /* Pods-Khalo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Khalo.debug.xcconfig"; path = "Target Support Files/Pods-Khalo/Pods-Khalo.debug.xcconfig"; sourceTree = "<group>"; };
 		69EE4C379336954E4059AC77 /* Pods_Khalo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Khalo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9208964A275C0AA594D11B85 /* Pods-Khalo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Khalo.release.xcconfig"; path = "Target Support Files/Pods-Khalo/Pods-Khalo.release.xcconfig"; sourceTree = "<group>"; };
@@ -181,6 +205,9 @@
 		001D181B293B40010059CBA3 /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				0050796D2948C039005A7F91 /* Models */,
+				0050796A2948C00D005A7F91 /* Libs */,
+				005079692948BFED005A7F91 /* Components */,
 				001D182A293E8D200059CBA3 /* NotificationCentre.swift */,
 			);
 			path = Common;
@@ -196,6 +223,8 @@
 		001D181D293B40110059CBA3 /* Flow */ = {
 			isa = PBXGroup;
 			children = (
+				005079812948C245005A7F91 /* Menu */,
+				005079722948C0E8005A7F91 /* Main Page */,
 				001D181E293B401A0059CBA3 /* Login */,
 			);
 			path = Flow;
@@ -205,6 +234,7 @@
 			isa = PBXGroup;
 			children = (
 				001D181F293B40200059CBA3 /* Phase1 */,
+				005079622948BF2C005A7F91 /* Phase2 */,
 			);
 			path = Login;
 			sourceTree = "<group>";
@@ -212,10 +242,120 @@
 		001D181F293B40200059CBA3 /* Phase1 */ = {
 			isa = PBXGroup;
 			children = (
-				001D1820293B404B0059CBA3 /* LoginMobileNumberView.swift */,
-				001D1822293B40540059CBA3 /* LoginMobileNumberViewModel.swift */,
+				005079602948BF22005A7F91 /* PhoneViewModel.swift */,
+				0050795E2948BF16005A7F91 /* PhoneNumber.swift */,
 			);
 			path = Phase1;
+			sourceTree = "<group>";
+		};
+		005079622948BF2C005A7F91 /* Phase2 */ = {
+			isa = PBXGroup;
+			children = (
+				005079632948BF4A005A7F91 /* OtpScreen.swift */,
+				005079652948BF51005A7F91 /* OTPViewModel.swift */,
+			);
+			path = Phase2;
+			sourceTree = "<group>";
+		};
+		005079692948BFED005A7F91 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				0050797C2948C1B2005A7F91 /* Navigation bar */,
+				005079792948C14E005A7F91 /* Textfield */,
+				0050796F2948C0A1005A7F91 /* Buttons */,
+				0050796E2948C096005A7F91 /* Pickers */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		0050796A2948C00D005A7F91 /* Libs */ = {
+			isa = PBXGroup;
+			children = (
+				0050796B2948C018005A7F91 /* Toast.swift */,
+			);
+			path = Libs;
+			sourceTree = "<group>";
+		};
+		0050796D2948C039005A7F91 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		0050796E2948C096005A7F91 /* Pickers */ = {
+			isa = PBXGroup;
+			children = (
+				005079672948BF95005A7F91 /* CountryCodePicker.swift */,
+			);
+			path = Pickers;
+			sourceTree = "<group>";
+		};
+		0050796F2948C0A1005A7F91 /* Buttons */ = {
+			isa = PBXGroup;
+			children = (
+				005079702948C0C3005A7F91 /* CustomButton.swift */,
+			);
+			path = Buttons;
+			sourceTree = "<group>";
+		};
+		005079722948C0E8005A7F91 /* Main Page */ = {
+			isa = PBXGroup;
+			children = (
+				005079822948C24F005A7F91 /* Card */,
+				005079802948C21D005A7F91 /* Main */,
+				0050797F2948C1F8005A7F91 /* ListCard */,
+			);
+			path = "Main Page";
+			sourceTree = "<group>";
+		};
+		005079792948C14E005A7F91 /* Textfield */ = {
+			isa = PBXGroup;
+			children = (
+				005079852948C2AE005A7F91 /* TextFieldDesign.swift */,
+				0050797A2948C158005A7F91 /* CustomeTextField.swift */,
+			);
+			path = Textfield;
+			sourceTree = "<group>";
+		};
+		0050797C2948C1B2005A7F91 /* Navigation bar */ = {
+			isa = PBXGroup;
+			children = (
+				0050797D2948C1C7005A7F91 /* CustomeNavigationBar.swift */,
+			);
+			path = "Navigation bar";
+			sourceTree = "<group>";
+		};
+		0050797F2948C1F8005A7F91 /* ListCard */ = {
+			isa = PBXGroup;
+			children = (
+				005079742948C11B005A7F91 /* ListCard.swift */,
+			);
+			path = ListCard;
+			sourceTree = "<group>";
+		};
+		005079802948C21D005A7F91 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				005079732948C11B005A7F91 /* MainScreen.swift */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		005079812948C245005A7F91 /* Menu */ = {
+			isa = PBXGroup;
+			children = (
+				005079752948C11B005A7F91 /* MenuView.swift */,
+			);
+			path = Menu;
+			sourceTree = "<group>";
+		};
+		005079822948C24F005A7F91 /* Card */ = {
+			isa = PBXGroup;
+			children = (
+				005079832948C25B005A7F91 /* Custome Card.swift */,
+			);
+			path = Card;
 			sourceTree = "<group>";
 		};
 		39A728FFB7BF658870F787E4 /* Pods */ = {
@@ -410,12 +550,24 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				005079762948C11B005A7F91 /* MainScreen.swift in Sources */,
+				005079772948C11B005A7F91 /* ListCard.swift in Sources */,
 				001D1806293B350B0059CBA3 /* AppDelegate.swift in Sources */,
 				001D17D6293B30670059CBA3 /* ContentView.swift in Sources */,
-				001D1823293B40540059CBA3 /* LoginMobileNumberViewModel.swift in Sources */,
 				001D182B293E8D200059CBA3 /* NotificationCentre.swift in Sources */,
+				005079642948BF4A005A7F91 /* OtpScreen.swift in Sources */,
+				005079842948C25B005A7F91 /* Custome Card.swift in Sources */,
+				005079662948BF51005A7F91 /* OTPViewModel.swift in Sources */,
+				005079782948C11B005A7F91 /* MenuView.swift in Sources */,
+				005079612948BF22005A7F91 /* PhoneViewModel.swift in Sources */,
+				005079682948BF95005A7F91 /* CountryCodePicker.swift in Sources */,
+				0050797E2948C1C7005A7F91 /* CustomeNavigationBar.swift in Sources */,
+				005079712948C0C3005A7F91 /* CustomButton.swift in Sources */,
+				0050796C2948C018005A7F91 /* Toast.swift in Sources */,
+				0050795F2948BF16005A7F91 /* PhoneNumber.swift in Sources */,
+				005079862948C2AE005A7F91 /* TextFieldDesign.swift in Sources */,
+				0050797B2948C158005A7F91 /* CustomeTextField.swift in Sources */,
 				001D1805293B350B0059CBA3 /* SceneDelegate.swift in Sources */,
-				001D1821293B404B0059CBA3 /* LoginMobileNumberView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
