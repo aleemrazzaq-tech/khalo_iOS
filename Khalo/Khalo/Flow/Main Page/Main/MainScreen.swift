@@ -24,32 +24,44 @@ struct MainScreen: View {
                     }
                 }
             }
-        return ZStack(alignment: .top) {
+        return NavigationView {
             
-            VStack
-            {
-                MainView(changeSegment:$segmentChange, isShow: self.$isShow).background(.red)
-                if segmentChange{
-                    ListCard()
-                }
+            ZStack(alignment: .top) {
                 
-   
-            }
-                        GeometryReader {
-                            geometry in
-                            ZStack(alignment:.leading)
-                            {
-            
-            
-                               if isShow
+                VStack
+                {
+                    MainView(changeSegment:$segmentChange, isShow: self.$isShow).background(.red)
+                    if segmentChange{
+                        ListCard()
+                    }
+                    else{
+                      
+                       
+                    }
+                    
+       
+                }
+                            GeometryReader {
+                                geometry in
+                                ZStack(alignment:.leading)
                                 {
-                                       MenuView()
-                                      .frame(width: geometry.size.width/1.25)}}
-                                      .gesture(drag)
-            
-                        }
+                
+                
+                                   if isShow
+                                    {
+                                           MenuView()
+                                          .frame(width: geometry.size.width/1.25)}}
+                                          .gesture(drag)
+                
+                            }
+                
+            }
+            .navigationBarHidden(true)
             
         }
+            
+             
+  
        
     }
 }
@@ -76,7 +88,7 @@ struct MainView:View
        
         VStack(spacing:0)
         {
-            CustomeNavigationBar(isCkeck: $isShow)
+            CustomeNavigationBar(isCkeck: $isShow,showNavigator: $changeSegment)
             let activeColor = LinearGradient(
                 gradient: .init(colors: [Self.gradientStart, Self.gradientEnd]),
                 startPoint: .leading,
@@ -99,12 +111,12 @@ struct MainView:View
                             .onTapGesture()
                         {
                             isSelected = true
-                           changeSegment = true
+                            changeSegment = true
                         }
                         
                         HStack
                         {
-                            Image("motor")
+                            Image("icon_bike_ride")
                                 .resizable()
                                 .scaledToFit()
                                 .frame(width:20, height: 20)
@@ -116,7 +128,9 @@ struct MainView:View
                       
                     }
                    
+                   
                     ZStack {
+                       
                         Rectangle()
                             .fill(self.isSelected ?   nonActiveColor : activeColor)
                             .onTapGesture()
@@ -126,13 +140,19 @@ struct MainView:View
                     }
                         HStack
                         {
-                            Image("motor")
-                                .resizable()
-                                .scaledToFit()
-                                .frame(width:20, height: 20)
-                               
-                            Text("Delivery")
-                                .foregroundColor(.white)
+                            NavigationLink(
+                                destination:PickupLocation(changeSegment:$changeSegment , isSelected:$isSelected)
+                                            
+                                    ) {
+                                        Image("icon_bike_ride")
+                                            .resizable()
+                                            .scaledToFit()
+                                            .frame(width:20, height: 20)
+                                           
+                                        Text("Pickup")
+                                            .foregroundColor(.white)
+                                    }
+                            
                         }
                     }
                   

@@ -8,13 +8,17 @@
 import SwiftUI
 
 struct ListCard: View {
+   var dataArray = MainViewModel.data
     var body: some View {
         ScrollView(.vertical) {
             VStack(spacing:-25)
             {
-                ForEach((0...3),id:\.self)
-                {_ in
-                    Custome_Card()
+               
+               
+                ForEach((0..<dataArray.count),id:\.self)
+                {  value in
+                    
+                    Custome_Card(image: dataArray[value].Image, name:  dataArray[value].resturantName, review:  dataArray[value].rating, time:  dataArray[value].totalTime)
                 }
                
             

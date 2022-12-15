@@ -34,6 +34,11 @@
 		005079862948C2AE005A7F91 /* TextFieldDesign.swift in Sources */ = {isa = PBXBuildFile; fileRef = 005079852948C2AE005A7F91 /* TextFieldDesign.swift */; };
 		00A7A194294919380054927D /* LoginDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00A7A193294919380054927D /* LoginDataModel.swift */; };
 		420D75298FEF19FBEA6C8F52 /* Pods_Khalo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 69EE4C379336954E4059AC77 /* Pods_Khalo.framework */; };
+		D19E72F1294A100600135F83 /* FocusLogic.swift in Sources */ = {isa = PBXBuildFile; fileRef = D19E72F0294A100600135F83 /* FocusLogic.swift */; };
+		D19E72F3294A13AE00135F83 /* DeliveryDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D19E72F2294A13AE00135F83 /* DeliveryDataModel.swift */; };
+		D19E72F5294A157A00135F83 /* MainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D19E72F4294A157A00135F83 /* MainViewModel.swift */; };
+		D19E72F8294A1FF700135F83 /* customshape.swift in Sources */ = {isa = PBXBuildFile; fileRef = D19E72F7294A1FF700135F83 /* customshape.swift */; };
+		D19E72FB294A24E300135F83 /* PickupLocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = D19E72FA294A24E300135F83 /* PickupLocation.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -87,6 +92,11 @@
 		2E383C6726638A27D4815F68 /* Pods-Khalo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Khalo.debug.xcconfig"; path = "Target Support Files/Pods-Khalo/Pods-Khalo.debug.xcconfig"; sourceTree = "<group>"; };
 		69EE4C379336954E4059AC77 /* Pods_Khalo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Khalo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9208964A275C0AA594D11B85 /* Pods-Khalo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Khalo.release.xcconfig"; path = "Target Support Files/Pods-Khalo/Pods-Khalo.release.xcconfig"; sourceTree = "<group>"; };
+		D19E72F0294A100600135F83 /* FocusLogic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FocusLogic.swift; sourceTree = "<group>"; };
+		D19E72F2294A13AE00135F83 /* DeliveryDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeliveryDataModel.swift; sourceTree = "<group>"; };
+		D19E72F4294A157A00135F83 /* MainViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewModel.swift; sourceTree = "<group>"; };
+		D19E72F7294A1FF700135F83 /* customshape.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = customshape.swift; sourceTree = "<group>"; };
+		D19E72FA294A24E300135F83 /* PickupLocation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickupLocation.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -225,6 +235,7 @@
 		001D181D293B40110059CBA3 /* Flow */ = {
 			isa = PBXGroup;
 			children = (
+				D19E72F9294A238E00135F83 /* Location */,
 				005079812948C245005A7F91 /* Menu */,
 				005079722948C0E8005A7F91 /* Main Page */,
 				001D181E293B401A0059CBA3 /* Login */,
@@ -255,6 +266,7 @@
 			children = (
 				005079632948BF4A005A7F91 /* OtpScreen.swift */,
 				005079652948BF51005A7F91 /* OTPViewModel.swift */,
+				D19E72F0294A100600135F83 /* FocusLogic.swift */,
 			);
 			path = Phase2;
 			sourceTree = "<group>";
@@ -262,6 +274,7 @@
 		005079692948BFED005A7F91 /* Components */ = {
 			isa = PBXGroup;
 			children = (
+				D19E72F6294A1FEA00135F83 /* Shapes */,
 				0050797C2948C1B2005A7F91 /* Navigation bar */,
 				005079792948C14E005A7F91 /* Textfield */,
 				0050796F2948C0A1005A7F91 /* Buttons */,
@@ -282,6 +295,7 @@
 			isa = PBXGroup;
 			children = (
 				00A7A193294919380054927D /* LoginDataModel.swift */,
+				D19E72F2294A13AE00135F83 /* DeliveryDataModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -307,7 +321,7 @@
 			children = (
 				005079822948C24F005A7F91 /* Card */,
 				005079802948C21D005A7F91 /* Main */,
-				0050797F2948C1F8005A7F91 /* ListCard */,
+				0050797F2948C1F8005A7F91 /* DeliveryCard */,
 			);
 			path = "Main Page";
 			sourceTree = "<group>";
@@ -329,18 +343,19 @@
 			path = "Navigation bar";
 			sourceTree = "<group>";
 		};
-		0050797F2948C1F8005A7F91 /* ListCard */ = {
+		0050797F2948C1F8005A7F91 /* DeliveryCard */ = {
 			isa = PBXGroup;
 			children = (
 				005079742948C11B005A7F91 /* ListCard.swift */,
 			);
-			path = ListCard;
+			path = DeliveryCard;
 			sourceTree = "<group>";
 		};
 		005079802948C21D005A7F91 /* Main */ = {
 			isa = PBXGroup;
 			children = (
 				005079732948C11B005A7F91 /* MainScreen.swift */,
+				D19E72F4294A157A00135F83 /* MainViewModel.swift */,
 			);
 			path = Main;
 			sourceTree = "<group>";
@@ -368,6 +383,22 @@
 				9208964A275C0AA594D11B85 /* Pods-Khalo.release.xcconfig */,
 			);
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		D19E72F6294A1FEA00135F83 /* Shapes */ = {
+			isa = PBXGroup;
+			children = (
+				D19E72F7294A1FF700135F83 /* customshape.swift */,
+			);
+			path = Shapes;
+			sourceTree = "<group>";
+		};
+		D19E72F9294A238E00135F83 /* Location */ = {
+			isa = PBXGroup;
+			children = (
+				D19E72FA294A24E300135F83 /* PickupLocation.swift */,
+			);
+			path = Location;
 			sourceTree = "<group>";
 		};
 		DE1E6A9D8F813AB9F8514BF8 /* Frameworks */ = {
@@ -554,17 +585,21 @@
 			buildActionMask = 2147483647;
 			files = (
 				005079762948C11B005A7F91 /* MainScreen.swift in Sources */,
+				D19E72F1294A100600135F83 /* FocusLogic.swift in Sources */,
 				005079772948C11B005A7F91 /* ListCard.swift in Sources */,
 				001D1806293B350B0059CBA3 /* AppDelegate.swift in Sources */,
 				001D17D6293B30670059CBA3 /* ContentView.swift in Sources */,
 				001D182B293E8D200059CBA3 /* NotificationCentre.swift in Sources */,
+				D19E72F3294A13AE00135F83 /* DeliveryDataModel.swift in Sources */,
 				005079642948BF4A005A7F91 /* OtpScreen.swift in Sources */,
 				005079842948C25B005A7F91 /* Custome Card.swift in Sources */,
 				005079662948BF51005A7F91 /* OTPViewModel.swift in Sources */,
 				005079782948C11B005A7F91 /* MenuView.swift in Sources */,
 				005079612948BF22005A7F91 /* PhoneViewModel.swift in Sources */,
+				D19E72FB294A24E300135F83 /* PickupLocation.swift in Sources */,
 				00A7A194294919380054927D /* LoginDataModel.swift in Sources */,
 				005079682948BF95005A7F91 /* CountryCodePicker.swift in Sources */,
+				D19E72F8294A1FF700135F83 /* customshape.swift in Sources */,
 				0050797E2948C1C7005A7F91 /* CustomeNavigationBar.swift in Sources */,
 				005079712948C0C3005A7F91 /* CustomButton.swift in Sources */,
 				0050796C2948C018005A7F91 /* Toast.swift in Sources */,
@@ -572,6 +607,7 @@
 				005079862948C2AE005A7F91 /* TextFieldDesign.swift in Sources */,
 				0050797B2948C158005A7F91 /* CustomeTextField.swift in Sources */,
 				001D1805293B350B0059CBA3 /* SceneDelegate.swift in Sources */,
+				D19E72F5294A157A00135F83 /* MainViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -741,6 +777,7 @@
 				INFOPLIST_KEY_UILaunchStoryboardName = "Launch Screen.storyboard";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -773,6 +810,7 @@
 				INFOPLIST_KEY_UILaunchStoryboardName = "Launch Screen.storyboard";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

@@ -9,6 +9,7 @@ import SwiftUI
 
 struct CustomeNavigationBar: View {
     @Binding var isCkeck:Bool
+    @Binding var showNavigator:Bool
     var body: some View {
         HStack()
         {
@@ -16,9 +17,9 @@ struct CustomeNavigationBar: View {
             Spacer()
             titleSection
             Spacer()
-            MainButton.opacity(0)
+            triangleShape.opacity(showNavigator ? 0 : 1)
         }
-        .padding(.bottom)
+        .padding([.bottom , .horizontal])
         .accentColor(.black)
         .background(Color.white.ignoresSafeArea(edges: .top))
         .font(.headline)
@@ -65,6 +66,19 @@ extension CustomeNavigationBar
             Text("Work")
             
         }
+    }
+    
+    private var triangleShape:some View
+    {
+        triangle()
+            .foregroundColor(.red)
+            .frame(width: 30, height: 30)
+            .overlay{
+                Image(systemName: "arrow.forward")
+                .foregroundColor(.white)
+                
+            }
+        
     }
 }
 

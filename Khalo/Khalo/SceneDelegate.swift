@@ -21,7 +21,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         // Use a UIHostingController as window root view controller
         if let windowScene = scene as? UIWindowScene {
             let window = UIWindow(windowScene: windowScene)
-            window.rootViewController = UIHostingController(rootView:  PhoneNumber(countryCode: "+92", phoneNumber: "3107869149"))
+            window.rootViewController = UIHostingController(rootView: MainScreen())
             self.window = window
             window.makeKeyAndVisible()
         }
