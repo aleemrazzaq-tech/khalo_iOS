@@ -11,6 +11,7 @@ struct MainScreen: View {
     
     @State var isShow:Bool = false
     @State var segmentChange:Bool = true
+    @StateObject private var viewModel = MainViewModel()
    
     var body: some View
     {
@@ -32,7 +33,11 @@ struct MainScreen: View {
                 {
                     MainView(changeSegment:$segmentChange, isShow: self.$isShow).background(.red)
                     if segmentChange{
-                        ListCard()
+                        NavigationLink(
+                            destination:PickUPView())
+                        {
+                            ListCard(array: viewModel.array)
+                        }.foregroundColor(.black)
                     }
                     else{
                       
@@ -58,6 +63,12 @@ struct MainScreen: View {
             }
             .navigationBarHidden(true)
             
+        }
+        .onAppear()
+        {
+            Task{
+               let data = await viewModel.getData()
+            }
         }
             
              
@@ -113,7 +124,7 @@ struct MainView:View
                             isSelected = true
                             changeSegment = true
                         }
-                        
+                       
                         HStack
                         {
                             Image("icon_bike_ride")
@@ -125,6 +136,7 @@ struct MainView:View
                                 .foregroundColor(.white)
      
                         }
+                    
                       
                     }
                    

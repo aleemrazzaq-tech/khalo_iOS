@@ -8,17 +8,17 @@
 import SwiftUI
 
 struct ListCard: View {
-   var dataArray = MainViewModel.data
+    var array:[UIImage]
     var body: some View {
         ScrollView(.vertical) {
             VStack(spacing:-25)
             {
                
                
-                ForEach((0..<dataArray.count),id:\.self)
+                ForEach((0..<array.count),id:\.self)
                 {  value in
                     
-                    Custome_Card(image: dataArray[value].Image, name:  dataArray[value].resturantName, review:  dataArray[value].rating, time:  dataArray[value].totalTime)
+                    Custome_Card(image: array[value], name:  "hello", review:10.0, time:10)
                 }
                
             
@@ -32,6 +32,6 @@ struct ListCard: View {
 
 struct ListCard_Previews: PreviewProvider {
     static var previews: some View {
-        ListCard()
+        ListCard(array: [])
     }
 }

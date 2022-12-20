@@ -1,0 +1,77 @@
+{
+  "restaurants": [
+    {
+      "name": "Restaurant 1",
+      "image_link": "https://picsum.photos/200",
+      "rating": 4.5,
+      "segments": [
+        {
+          "name": "Breakfast",
+          "dishes": [
+            {
+              "name": "Eggs Benedict",
+              "price": 15.99
+            },
+            {
+              "name": "Pancakes",
+              "price": 12.99
+            }
+          ]
+        },
+        {
+          "name": "Lunch",
+          "dishes": [
+            {
+              "name": "Club Sandwich",
+              "price": 13.99
+            },
+            {
+              "name": "Soup of the Day",
+              "price": 10.99
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Restaurant 2",
+      "image_link": "https://picsum.photos/200",
+      "rating": 3.5,
+      "segments": [
+        {
+          "name": "Dinner",
+          "dishes": [
+            {
+              "name": "Steak",
+              "price": 29.99
+            },
+            {
+              "name": "Salmon",
+              "price": 25.99
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Restaurant 3",
+      "image_link": "https://picsum.photos/200",
+      "rating": 5,
+      "segments": [
+        {
+          "name": "Brunch",
+          "dishes": [
+            {
+              "name": "Avocado Toast",
+              "price": 14.99
+            },
+            {
+              "name": "Eggs Florentine",
+              "price": 16.99
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

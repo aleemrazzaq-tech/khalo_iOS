@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct Custome_Card: View {
-    var image:String
+    var image:UIImage
     var name:String
     var review:Double
     var time:Int
@@ -25,7 +25,7 @@ struct Custome_Card: View {
                        VStack
                        {
                        
-                           Image(image)
+                           Image(uiImage: image)
                                .scaledToFill()
                                .frame(width: UIScreen.main.bounds.width - 10, height: 250)
                                .cornerRadius(7)
@@ -71,19 +71,19 @@ struct Custome_Card: View {
     }
 }
 
-struct Custome_Card_Previews: PreviewProvider {
-    static var previews: some View {
-        Group
-        {
-            Custome_Card(image: "abc", name: "aaa", review: 1.2, time: 12)
-                .padding(.horizontal)
-            Custome_Card(image: "abc", name: "aaa", review: 1.2, time: 12)
-               
-        }
-       
-            .previewLayout(.fixed(width: 360, height: 380))
-            
-    }
-}
+//struct Custome_Card_Previews: PreviewProvider {
+//    static var previews: some View {
+//        Group
+//        {
+//            Custome_Card(image: , name: "aaa", review: 1.2, time: 12)
+//                .padding(.horizontal)
+//            Custome_Card(image:, name: "aaa", review: 1.2, time: 12)
+//               
+//        }
+//       
+//            .previewLayout(.fixed(width: 360, height: 380))
+//            
+//    }
+//}
 
 
