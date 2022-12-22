@@ -6,6 +6,7 @@ import SwiftUI
 class MainViewModel:ObservableObject
 {
     @Published var array:[UIImage] = []
+    @Published var jsonData:DeliveryModel?
 }
 
 //MARK:- Getdata from json file
@@ -17,12 +18,14 @@ extension MainViewModel
     {
         let data =  Bundle.main.decode("data.json")
         print("\(data.restaurants.count)")
+        self.jsonData = data
         for itr in 0...data.restaurants.count-1
         {
-           let data = await downloadImage(data.restaurants[itr].imageLink)!
+           let image = await downloadImage(data.restaurants[itr].imageLink)!
             await MainActor.run
             {
-              self.array.append(data)
+              self.array.append(image)
+            
             }
         }
         print("Data\(array.count)")
@@ -73,11 +76,7 @@ extension Bundle {
 }
 
 
-extension UIImage {
-    func toPngString() -> String? {
-        let data = self.pngData()
-        return data?.base64EncodedString(options: .endLineWithLineFeed)
-    }
+
   
    
-}
+

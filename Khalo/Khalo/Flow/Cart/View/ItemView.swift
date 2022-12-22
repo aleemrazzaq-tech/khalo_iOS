@@ -8,6 +8,8 @@
 import SwiftUI
 
 struct ItemView: View {
+    var name:String
+    var quantity:Int
     var body: some View {
         HStack(spacing:15)
         {
@@ -18,12 +20,12 @@ struct ItemView: View {
                 .cornerRadius(15)
             VStack(alignment: .leading, spacing: 10)
             {
-                Text("Eat food")
+                Text(name)
                     .fontWeight(.semibold)
                     .foregroundColor(.black)
                 HStack(spacing: 15)
                 {
-                    Text("10")
+                    Text("food")
                         .font(.title2)
                         .fontWeight(.heavy)
                         .foregroundColor(.black)
@@ -35,7 +37,7 @@ struct ItemView: View {
                             .font(.system(size: 16, weight: .heavy))
                             .foregroundColor(.black)
                     }
-                    Text("10")
+                    Text("\(quantity)")
                         .fontWeight(.heavy)
                         .foregroundColor(.black)
                         .padding(.vertical , 5)
@@ -57,6 +59,6 @@ struct ItemView: View {
 
 struct ItemView_Previews: PreviewProvider {
     static var previews: some View {
-        ItemView()
+        ItemView(name: "", quantity: 100)
     }
 }

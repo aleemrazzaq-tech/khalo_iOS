@@ -8,13 +8,16 @@
 import SwiftUI
 
 struct CartView: View {
+    @ObservedObject var item:PickUpViewModel
+    
     var body: some View {
         ScrollView
         {
-            ForEach((0...4) , id:\.self)
+            
+            ForEach((0..<item.cartItem.count) , id:\.self)
             {
                 itr in
-                ItemView()
+                ItemView(name:item.cartItem[itr].item.name, quantity:  item.cartItem[itr].quantity)
             }
         }
     }
@@ -22,6 +25,6 @@ struct CartView: View {
 
 struct CartView_Previews: PreviewProvider {
     static var previews: some View {
-        CartView()
+        CartView(item:PickUpViewModel())
     }
 }

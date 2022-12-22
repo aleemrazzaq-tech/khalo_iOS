@@ -33,11 +33,9 @@ struct MainScreen: View {
                 {
                     MainView(changeSegment:$segmentChange, isShow: self.$isShow).background(.red)
                     if segmentChange{
-                        NavigationLink(
-                            destination:PickUPView())
-                        {
-                            ListCard(array: viewModel.array)
-                        }.foregroundColor(.black)
+                       
+                            ListCard(array: viewModel.array, data:viewModel.jsonData)
+                        
                     }
                     else{
                       
@@ -131,13 +129,9 @@ struct MainView:View
                                 .resizable()
                                 .scaledToFit()
                                 .frame(width:20, height: 20)
-                               
                             Text("Delivery")
                                 .foregroundColor(.white)
-     
                         }
-                    
-                      
                     }
                    
                    

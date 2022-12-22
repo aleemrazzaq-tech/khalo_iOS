@@ -44,8 +44,9 @@
 		D1D54CB32950D66D0045A25C /* data.json in Resources */ = {isa = PBXBuildFile; fileRef = D1D54CB22950D66D0045A25C /* data.json */; };
 		D1D54CD02951F0C30045A25C /* CartModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1D54CCF2951F0C30045A25C /* CartModel.swift */; };
 		D1D54CD22951F1250045A25C /* CartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1D54CD12951F1250045A25C /* CartView.swift */; };
-		D1D54CD42951F15A0045A25C /* CardViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1D54CD32951F15A0045A25C /* CardViewModel.swift */; };
+		D1D54CD42951F15A0045A25C /* CartViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1D54CD32951F15A0045A25C /* CartViewModel.swift */; };
 		D1D54CD92951F1EB0045A25C /* ItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1D54CD82951F1EB0045A25C /* ItemView.swift */; };
+		D1D54CDD29535A6C0045A25C /* PickViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1D54CDC29535A6C0045A25C /* PickViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -109,8 +110,9 @@
 		D1D54CB22950D66D0045A25C /* data.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = data.json; sourceTree = "<group>"; };
 		D1D54CCF2951F0C30045A25C /* CartModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartModel.swift; sourceTree = "<group>"; };
 		D1D54CD12951F1250045A25C /* CartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartView.swift; sourceTree = "<group>"; };
-		D1D54CD32951F15A0045A25C /* CardViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardViewModel.swift; sourceTree = "<group>"; };
+		D1D54CD32951F15A0045A25C /* CartViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartViewModel.swift; sourceTree = "<group>"; };
 		D1D54CD82951F1EB0045A25C /* ItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemView.swift; sourceTree = "<group>"; };
+		D1D54CDC29535A6C0045A25C /* PickViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -408,6 +410,7 @@
 			children = (
 				D1461372295087F200DFABD4 /* Card */,
 				D146136E294B609F00DFABD4 /* PickUPView.swift */,
+				D1D54CDC29535A6C0045A25C /* PickViewModel.swift */,
 			);
 			path = "Pick_Up Menu";
 			sourceTree = "<group>";
@@ -440,7 +443,7 @@
 			isa = PBXGroup;
 			children = (
 				D1D54CD52951F1B40045A25C /* View */,
-				D1D54CD32951F15A0045A25C /* CardViewModel.swift */,
+				D1D54CD32951F15A0045A25C /* CartViewModel.swift */,
 			);
 			path = Cart;
 			sourceTree = "<group>";
@@ -653,6 +656,7 @@
 				005079782948C11B005A7F91 /* MenuView.swift in Sources */,
 				D1D54CD92951F1EB0045A25C /* ItemView.swift in Sources */,
 				D14613742950881C00DFABD4 /* DetailCard.swift in Sources */,
+				D1D54CDD29535A6C0045A25C /* PickViewModel.swift in Sources */,
 				005079612948BF22005A7F91 /* PhoneViewModel.swift in Sources */,
 				D19E72FB294A24E300135F83 /* PickupLocation.swift in Sources */,
 				00A7A194294919380054927D /* LoginDataModel.swift in Sources */,
@@ -663,7 +667,7 @@
 				0050796C2948C018005A7F91 /* Toast.swift in Sources */,
 				D1D54CD22951F1250045A25C /* CartView.swift in Sources */,
 				0050795F2948BF16005A7F91 /* PhoneNumber.swift in Sources */,
-				D1D54CD42951F15A0045A25C /* CardViewModel.swift in Sources */,
+				D1D54CD42951F15A0045A25C /* CartViewModel.swift in Sources */,
 				005079862948C2AE005A7F91 /* TextFieldDesign.swift in Sources */,
 				0050797B2948C158005A7F91 /* CustomeTextField.swift in Sources */,
 				001D1805293B350B0059CBA3 /* SceneDelegate.swift in Sources */,

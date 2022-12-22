@@ -8,6 +8,8 @@
 import SwiftUI
 
 struct DetailCard: View {
+    var name:String
+    var price:Double
     var body: some View {
         ZStack
         {
@@ -21,7 +23,7 @@ struct DetailCard: View {
                       
                             VStack(alignment: .leading)
                             {
-                                Text("Cheese Omelette")
+                                Text(name)
                                     .bold()
                                     .font(.title2)
                                 Spacer()
@@ -40,7 +42,7 @@ struct DetailCard: View {
                                 Spacer()
   
                                 
-                                Text("PKR 199.0")
+                                Text("PKR\(String(format: "%.2f", price))")
                                     .padding(.bottom)
                                  
                                 
@@ -63,8 +65,8 @@ struct DetailCard: View {
 
 struct DetailCard_Previews: PreviewProvider {
     static var previews: some View {
-        DetailCard()
-        DetailCard()
+        DetailCard(name: "Resturant 1", price:10.0)
+        DetailCard(name: "Resturant 1", price:10.0)
             .preferredColorScheme(.dark)
         
     }

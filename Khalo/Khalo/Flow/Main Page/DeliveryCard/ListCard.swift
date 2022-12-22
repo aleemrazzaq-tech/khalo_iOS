@@ -9,6 +9,7 @@ import SwiftUI
 
 struct ListCard: View {
     var array:[UIImage]
+    var data:DeliveryModel?
     var body: some View {
         ScrollView(.vertical) {
             VStack(spacing:-25)
@@ -17,8 +18,11 @@ struct ListCard: View {
                
                 ForEach((0..<array.count),id:\.self)
                 {  value in
-                    
-                    Custome_Card(image: array[value], name:  "hello", review:10.0, time:10)
+                    NavigationLink(
+                        destination:PickUPView(segment: data!.restaurants[value].segments))
+                    {
+                    Custome_Card(image: array[value], name: data?.restaurants[value].name ?? "nil", review:data?.restaurants[value].rating ?? 4.5, time:10)
+                    }.foregroundColor(.black)
                 }
                
             

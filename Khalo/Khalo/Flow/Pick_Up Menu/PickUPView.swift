@@ -12,6 +12,9 @@ struct PickUPView: View {
     @State var currentTab:Int = 0
     @State var showOptions:Bool = false
     @State var showcart:Bool = false
+    @State var index:Int = 0
+    var item = PickUpViewModel()
+    var segment:[Segment]
     var body: some View
     {
             VStack()
@@ -19,6 +22,7 @@ struct PickUPView: View {
                  
                     HStack
                     {
+                        
                         Button(action:{dismiss()})
                         {
                             Image(systemName:"chevron.backward")
@@ -36,7 +40,7 @@ struct PickUPView: View {
                     Spacer()
                     VStack
                     {
-                        TabBarView(currentTab:$currentTab)
+                        TabBarView(currentTab:$currentTab,segment:self.segment)
                         .frame(height: 40)
                         .offset(y:20)
                     }
@@ -47,12 +51,11 @@ struct PickUPView: View {
                     
                 TabView(selection:$currentTab)
                 {
-                     dummyView().tag(0)
-                    dummyView1().tag(1)
-                    dummyView2().tag(2)
-                    dummyView2().tag(3)
-                    dummyView2().tag(4)
-                    dummyView2().tag(5)
+                    ForEach(0..<segment.count , id:\.self)
+                    {
+                        itr in
+                        dummyView(dishes: segment[itr].dishes, obj: item).tag(itr)
+                    }
 
                 }
                 .tabViewStyle(.page(indexDisplayMode:.never))
@@ -62,7 +65,7 @@ struct PickUPView: View {
                     HStack(alignment: .center)
                     {
                         Spacer()
-                        NavigationLink(destination: CartView())
+                        NavigationLink(destination: CartView(item: self.item))
                         {
                            Image(systemName: "cart")
                         }
@@ -82,25 +85,30 @@ struct PickUPView: View {
     
     
     @ViewBuilder
-    func dummyView()->some View
+    func dummyView(dishes:[Dish] , obj:PickUpViewModel)->some View
     {
+        
         ScrollView
         {
-            ForEach((0...4), id:\.self)
+            ForEach((0..<dishes.count), id:\.self)
             {
                 content in
-                DetailCard()
+                DetailCard(name:dishes[content].name, price: dishes[content].price)
                     .padding()
                     .onTapGesture {
+                        let _ = print("DATA C\(content)")
+                        index = content
                         showOptions.toggle()
                     }
                     .actionSheet(isPresented: $showOptions)
-                {
+                   {
                         ActionSheet(title: Text("What do you want to do?"),
                         message: nil,
                         buttons: [
                            .default(Text("Add to cart")) {
                                showcart = true
+                               
+                               obj.addToCart(item: dishes[index])
                            },
                            .default(Text("Mark as favorite")) {
                            },
@@ -113,31 +121,24 @@ struct PickUPView: View {
            
         }
     }
-    func dummyView1()->some View
-    {
-       
-            Color.red
-            .opacity(0.2)
-            .edgesIgnoringSafeArea(.all)
-    }
-    func dummyView2()->some View
-    {
-       
-        Color.green
-            .opacity(0.2)
-            .edgesIgnoringSafeArea(.all)
-    }
 }
 
 struct PickUPView_Previews: PreviewProvider {
     static var previews: some View {
-        PickUPView()
+        PickUPView(segment: [])
     }
 }
 struct TabBarView:View
 {
     @Binding var currentTab:Int
-    var items = ["Omelette" , "Desi" , "Kabab" , "Pizza" , "PizzaRoll" , "Sides"]
+    var segment:[Segment]
+    var items:[String] = ["Dummy"]
+    init(currentTab:Binding<Int> ,segment:[Segment])
+    {
+        self._currentTab = currentTab
+        self.segment = segment
+        items =  segment.map{(resturant) -> String in return resturant.name}
+    }
     @Namespace var namespace
     var body:some View
     {
@@ -153,13 +154,14 @@ struct TabBarView:View
               
                 HStack(alignment:.center,spacing:30)
                 {
-                    ForEach(0...5,id:\.self)
+                    ForEach(0..<items.count,id:\.self)
                     {
                         item in
+                        let _ = print("DATA\(items.count)")
                         TabBarItem(currentItem: $currentTab, namespace: self.namespace, tabBarItemName: items[item], tab: item)
                         {
                             currentItem in
-                            proxy .scrollTo(currentItem ,anchor: .center)
+                            proxy.scrollTo(currentItem ,anchor: .center)
                         }
                           
                         
@@ -198,7 +200,6 @@ struct TabBarItem:View
         Button()
         {
             self.currentItem = tab
-            
             scroll(currentItem)
         }
        label:{
@@ -222,3 +223,6 @@ struct TabBarItem:View
        }
     }
 }
+
+
+
