@@ -8,6 +8,22 @@
 import Foundation
 struct Cart
 {
-    var item:Dish
-    var quantity:Int
+  
+    var name:String
+    var totalItem:Int
+    var price:Double
+    
+    init(name:String, totalItem:Int , price:Double)
+    {
+        self.name = name
+        self.totalItem = totalItem
+        self.price = price
+        
+    }
+    
+   
+    
+    
+    
 }
+

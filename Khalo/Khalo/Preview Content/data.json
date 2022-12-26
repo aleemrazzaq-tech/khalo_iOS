@@ -10,11 +10,11 @@
           "dishes": [
             {
               "name": "Eggs Benedict",
-              "price": 15.99
+              "price": 15.0
             },
             {
               "name": "Pancakes",
-              "price": 12.99
+              "price": 12.0
             }
           ]
         },
@@ -23,11 +23,11 @@
           "dishes": [
             {
               "name": "Club Sandwich",
-              "price": 13.99
+              "price": 13.0
             },
             {
               "name": "Soup of the Day",
-              "price": 10.99
+              "price": 10.0
             }
           ]
         }
@@ -43,11 +43,11 @@
           "dishes": [
             {
               "name": "Steak",
-              "price": 29.99
+              "price": 29.0
             },
             {
               "name": "Salmon",
-              "price": 25.99
+              "price": 25.0
             }
           ]
         }
@@ -63,11 +63,11 @@
           "dishes": [
             {
               "name": "Avocado Toast",
-              "price": 14.99
+              "price": 14.0
             },
             {
               "name": "Eggs Florentine",
-              "price": 16.99
+              "price": 16.0
             }
           ]
         }

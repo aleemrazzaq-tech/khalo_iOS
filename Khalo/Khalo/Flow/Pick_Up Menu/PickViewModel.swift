@@ -8,11 +8,19 @@
 import Foundation
 class PickUpViewModel:ObservableObject
 {
-    @Published var cartItem:[Cart] = []
+    @Published private(set) var cartItem:[Cart] = []
+    @Published var allPrice = 0.0
+    static var totalPrice = 0.0
     
-    func addToCart(item:Dish)
+    func addToCart(name:String, totalItem:Int , price:Double , calculatedValue:Double)
     {
-        let obj = Cart(item: item, quantity: 1)
+        let obj = Cart(name: name, totalItem: totalItem, price: price)
         self.cartItem.append(obj)
+        calculatTotalPrice(value:calculatedValue)
+    }
+    func calculatTotalPrice(value:Double)
+    {
+        PickUpViewModel.totalPrice = PickUpViewModel.totalPrice + value
+        self.allPrice =  PickUpViewModel.totalPrice
     }
 }

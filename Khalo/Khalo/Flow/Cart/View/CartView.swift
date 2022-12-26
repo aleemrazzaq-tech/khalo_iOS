@@ -17,7 +17,7 @@ struct CartView: View {
             ForEach((0..<item.cartItem.count) , id:\.self)
             {
                 itr in
-                ItemView(name:item.cartItem[itr].item.name, quantity:  item.cartItem[itr].quantity)
+                ItemView(name:item.cartItem[itr].name, quantity: item.cartItem[itr].totalItem)
             }
         }
     }

@@ -11,7 +11,7 @@ struct PickUPView: View {
     @Environment(\.dismiss)var dismiss
     @State var currentTab:Int = 0
     @State var showOptions:Bool = false
-    @State var showcart:Bool = false
+    @State var showcart:Bool = true
     @State var index:Int = 0
     var item = PickUpViewModel()
     var segment:[Segment]
@@ -25,9 +25,8 @@ struct PickUPView: View {
                         
                         Button(action:{dismiss()})
                         {
-                            Image(systemName:"chevron.backward")
-                                .resizable()
-                                .frame(width: 15, height: 15)
+                             Image(systemName: "chevron.backward")
+                                .scaledToFit()
                                 .foregroundColor(.black)
                         }.padding(.leading)
                         Spacer()
@@ -62,16 +61,31 @@ struct PickUPView: View {
                     
                  if showcart
                     {
-                    HStack(alignment: .center)
-                    {
-                        Spacer()
-                        NavigationLink(destination: CartView(item: self.item))
-                        {
-                           Image(systemName: "cart")
-                        }
-                        Spacer()
-                    }
-                    .background(.red)
+                     RoundedRectangle(cornerRadius: 0)
+                         .frame(width:UIScreen.main.bounds.width,height: 60)
+                         .foregroundColor(.red)
+                         .overlay(
+                             HStack
+                             {
+                                 NavigationLink(destination: CartView(item: self.item))
+                                 {
+                                  Text("Add to cart")
+                                 .fontWeight(.black)
+                                 .foregroundColor(.white)
+                                 }
+                                 
+
+                             Spacer()
+                             RoundedRectangle(cornerRadius: 20)
+                                 .frame(width: 130, height: 40)
+                                 .foregroundColor(Color.black.opacity(0.3))
+                                 .shadow(radius: 10)
+                                 .overlay(
+                                    Text("PKR \(item.allPrice)")
+                                         .foregroundColor(.white)
+                                 )
+                             }.padding()
+                         )
                     
                 
                  }
@@ -93,28 +107,13 @@ struct PickUPView: View {
             ForEach((0..<dishes.count), id:\.self)
             {
                 content in
-                DetailCard(name:dishes[content].name, price: dishes[content].price)
+                NavigationLink(destination:DetailPageView(itemName: dishes[content].name, itemPrice:  dishes[content].price,object:item))
+                {
+                   DetailCard(name:dishes[content].name, price: dishes[content].price)
                     .padding()
-                    .onTapGesture {
-                        let _ = print("DATA C\(content)")
-                        index = content
-                        showOptions.toggle()
-                    }
-                    .actionSheet(isPresented: $showOptions)
-                   {
-                        ActionSheet(title: Text("What do you want to do?"),
-                        message: nil,
-                        buttons: [
-                           .default(Text("Add to cart")) {
-                               showcart = true
-                               
-                               obj.addToCart(item: dishes[index])
-                           },
-                           .default(Text("Mark as favorite")) {
-                           },
-                           .cancel()
-                           ])
-                    }
+                }.foregroundColor(.black)
+                    
+                   
                        
             }
            
@@ -185,8 +184,6 @@ struct TabBarView:View
     }
     
 }
-
-
 struct TabBarItem:View
 {
     @Binding var currentItem:Int
