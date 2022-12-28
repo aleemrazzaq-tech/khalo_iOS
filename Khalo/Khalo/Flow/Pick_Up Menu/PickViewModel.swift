@@ -14,8 +14,14 @@ class PickUpViewModel:ObservableObject
     
     func addToCart(name:String, totalItem:Int , price:Double , calculatedValue:Double)
     {
-        let obj = Cart(name: name, totalItem: totalItem, price: price)
-        self.cartItem.append(obj)
+        if let row = self.cartItem.firstIndex(where: {$0.name == name}) {
+            cartItem[row].totalItem += totalItem
+        }
+        else{
+            let obj = Cart(name: name, totalItem: totalItem, price: price)
+            self.cartItem.append(obj)
+        }
+        
         calculatTotalPrice(value:calculatedValue)
     }
     func calculatTotalPrice(value:Double)

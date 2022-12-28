@@ -143,7 +143,7 @@ struct MainView:View
                         {
                             isSelected = false
                             changeSegment = false
-                    }
+                         }
                         HStack
                         {
                             NavigationLink(

@@ -69,7 +69,7 @@ struct PickUPView: View {
                              {
                                  NavigationLink(destination: CartView(item: self.item))
                                  {
-                                  Text("Add to cart")
+                                  Text("Checkout(items)")
                                  .fontWeight(.black)
                                  .foregroundColor(.white)
                                  }

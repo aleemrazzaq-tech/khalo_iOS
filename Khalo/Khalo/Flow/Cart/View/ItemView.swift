@@ -7,30 +7,22 @@
 
 import SwiftUI
 
-struct ItemView: View {
+struct ItemView: View
+{
     var name:String
     var quantity:Int
-    var body: some View {
+    var price:Int
+    @State var isAnimation:Bool = false
+    var body: some View
+    {
         HStack(spacing:15)
         {
-            Image("pizza")
-                .resizable()
-                .aspectRatio(contentMode:.fill)
-                .frame(width: 130, height: 130)
-                .cornerRadius(15)
-            VStack(alignment: .leading, spacing: 10)
+            ZStack
             {
-                Text(name)
-                    .fontWeight(.semibold)
-                    .foregroundColor(.black)
-                HStack(spacing: 15)
+               if isAnimation
                 {
-                    Text("food")
-                        .font(.title2)
-                        .fontWeight(.heavy)
-                        .foregroundColor(.black)
-                     Spacer(minLength: 0)
-                    
+               HStack
+                {
                     Button(action:{})
                     {
                         Image(systemName: "minus")
@@ -50,15 +42,45 @@ struct ItemView: View {
                             .foregroundColor(.black)
                     }
                 }
+                .offset(x: isAnimation ? 90:0)
+               }
+                
+                
+                Rectangle()
+                    .stroke()
+                     .frame(width: 50, height: 50)
+                    .overlay()
+                 {
+                    Text("\(quantity)")
+                        .onTapGesture {
+                            withAnimation(.default)
+                            {
+                                isAnimation.toggle()
+                            }
+                        }
+                   
+                }
             }
+            if !isAnimation
+            {
+            Text("\(name)")
+                .foregroundColor(.gray)
+                
+            }
+            Spacer()
+            Text("PKR \(price)")
+                 .foregroundColor(.black)
+           
+         
             
         }
         .padding()
+        
     }
 }
 
 struct ItemView_Previews: PreviewProvider {
     static var previews: some View {
-        ItemView(name: "", quantity: 100)
+        ItemView(name: "", quantity: 100 ,price: 16)
     }
 }
