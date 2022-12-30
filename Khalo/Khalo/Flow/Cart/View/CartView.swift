@@ -203,14 +203,22 @@ struct CartView: View {
 
                        
                    }
-                   
+                   descriptionBox()
+                     
+                      
                }
             
            
             
           
         }.background(.gray.opacity(0.2))
+            
+        
             //scroll
+        Slider()
+                .frame(height:75)
+                .clipShape(Rectangle())
+        
         }
         .navigationBarBackButtonHidden(true)
         .toolbar {
@@ -249,20 +257,20 @@ struct RectangularButton:View
         {
         if isSelected
             {
-            RoundedRectangle(cornerRadius: 10)
+            RoundedRectangle(cornerRadius: 5)
             .foregroundColor(.red)
-            .frame(width:  (UIScreen.main.bounds.size.width-20)/2, height:80)
+            .frame(width:  (UIScreen.main.bounds.size.width-20)/2, height:65)
            
             
        
         }
             else{
                
-                RoundedRectangle(cornerRadius: 10)
+                RoundedRectangle(cornerRadius: 5)
                 .stroke()
                 .foregroundColor(.black.opacity(0.2))
                 .shadow(radius: 10)
-                .frame(width:  (UIScreen.main.bounds.size.width-14)/2, height:80)
+                .frame(width:  (UIScreen.main.bounds.size.width-14)/2, height:65)
                
 
             }

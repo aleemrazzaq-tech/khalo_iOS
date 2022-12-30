@@ -36,11 +36,16 @@
 		420D75298FEF19FBEA6C8F52 /* Pods_Khalo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 69EE4C379336954E4059AC77 /* Pods_Khalo.framework */; };
 		D146136F294B609F00DFABD4 /* PickUPView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D146136E294B609F00DFABD4 /* PickUPView.swift */; };
 		D14613742950881C00DFABD4 /* DetailCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = D14613732950881C00DFABD4 /* DetailCard.swift */; };
+		D17520F2295C9472006A9853 /* Slider.swift in Sources */ = {isa = PBXBuildFile; fileRef = D17520F1295C9472006A9853 /* Slider.swift */; };
+		D17520F5295CB166006A9853 /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D17520F4295CB166006A9853 /* MapView.swift */; };
+		D17520F8295CB6C4006A9853 /* MapViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D17520F7295CB6C4006A9853 /* MapViewModel.swift */; };
 		D19E72F1294A100600135F83 /* FocusLogic.swift in Sources */ = {isa = PBXBuildFile; fileRef = D19E72F0294A100600135F83 /* FocusLogic.swift */; };
 		D19E72F3294A13AE00135F83 /* DeliveryDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D19E72F2294A13AE00135F83 /* DeliveryDataModel.swift */; };
 		D19E72F5294A157A00135F83 /* MainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D19E72F4294A157A00135F83 /* MainViewModel.swift */; };
 		D19E72F8294A1FF700135F83 /* customshape.swift in Sources */ = {isa = PBXBuildFile; fileRef = D19E72F7294A1FF700135F83 /* customshape.swift */; };
 		D19E72FB294A24E300135F83 /* PickupLocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = D19E72FA294A24E300135F83 /* PickupLocation.swift */; };
+		D1A46309295EDEAD00593E4D /* LocationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1A46308295EDEAD00593E4D /* LocationViewModel.swift */; };
+		D1A4630B295F2AF100593E4D /* descriptionBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1A4630A295F2AF100593E4D /* descriptionBox.swift */; };
 		D1D54CB32950D66D0045A25C /* data.json in Resources */ = {isa = PBXBuildFile; fileRef = D1D54CB22950D66D0045A25C /* data.json */; };
 		D1D54CD02951F0C30045A25C /* CartModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1D54CCF2951F0C30045A25C /* CartModel.swift */; };
 		D1D54CD22951F1250045A25C /* CartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1D54CD12951F1250045A25C /* CartView.swift */; };
@@ -103,11 +108,16 @@
 		9208964A275C0AA594D11B85 /* Pods-Khalo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Khalo.release.xcconfig"; path = "Target Support Files/Pods-Khalo/Pods-Khalo.release.xcconfig"; sourceTree = "<group>"; };
 		D146136E294B609F00DFABD4 /* PickUPView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickUPView.swift; sourceTree = "<group>"; };
 		D14613732950881C00DFABD4 /* DetailCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailCard.swift; sourceTree = "<group>"; };
+		D17520F1295C9472006A9853 /* Slider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Slider.swift; sourceTree = "<group>"; };
+		D17520F4295CB166006A9853 /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
+		D17520F7295CB6C4006A9853 /* MapViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewModel.swift; sourceTree = "<group>"; };
 		D19E72F0294A100600135F83 /* FocusLogic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FocusLogic.swift; sourceTree = "<group>"; };
 		D19E72F2294A13AE00135F83 /* DeliveryDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeliveryDataModel.swift; sourceTree = "<group>"; };
 		D19E72F4294A157A00135F83 /* MainViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewModel.swift; sourceTree = "<group>"; };
 		D19E72F7294A1FF700135F83 /* customshape.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = customshape.swift; sourceTree = "<group>"; };
 		D19E72FA294A24E300135F83 /* PickupLocation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickupLocation.swift; sourceTree = "<group>"; };
+		D1A46308295EDEAD00593E4D /* LocationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationViewModel.swift; sourceTree = "<group>"; };
+		D1A4630A295F2AF100593E4D /* descriptionBox.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = descriptionBox.swift; sourceTree = "<group>"; };
 		D1D54CB22950D66D0045A25C /* data.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = data.json; sourceTree = "<group>"; };
 		D1D54CCF2951F0C30045A25C /* CartModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartModel.swift; sourceTree = "<group>"; };
 		D1D54CD12951F1250045A25C /* CartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartView.swift; sourceTree = "<group>"; };
@@ -254,6 +264,7 @@
 		001D181D293B40110059CBA3 /* Flow */ = {
 			isa = PBXGroup;
 			children = (
+				D17520F3295CB150006A9853 /* Map */,
 				D1D54CE52954ADB00045A25C /* DetailPage */,
 				D1D54CCE2951F08F0045A25C /* Cart */,
 				D146136D294B5FA200DFABD4 /* Pick_Up Menu */,
@@ -426,6 +437,23 @@
 			path = Card;
 			sourceTree = "<group>";
 		};
+		D17520F3295CB150006A9853 /* Map */ = {
+			isa = PBXGroup;
+			children = (
+				D17520F6295CB6A6006A9853 /* View */,
+				D17520F7295CB6C4006A9853 /* MapViewModel.swift */,
+			);
+			path = Map;
+			sourceTree = "<group>";
+		};
+		D17520F6295CB6A6006A9853 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				D17520F4295CB166006A9853 /* MapView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		D19E72F6294A1FEA00135F83 /* Shapes */ = {
 			isa = PBXGroup;
 			children = (
@@ -437,9 +465,18 @@
 		D19E72F9294A238E00135F83 /* Location */ = {
 			isa = PBXGroup;
 			children = (
-				D19E72FA294A24E300135F83 /* PickupLocation.swift */,
+				D1A46307295EDE8500593E4D /* View */,
+				D1A46308295EDEAD00593E4D /* LocationViewModel.swift */,
 			);
 			path = Location;
+			sourceTree = "<group>";
+		};
+		D1A46307295EDE8500593E4D /* View */ = {
+			isa = PBXGroup;
+			children = (
+				D19E72FA294A24E300135F83 /* PickupLocation.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 		D1D54CCE2951F08F0045A25C /* Cart */ = {
@@ -456,6 +493,8 @@
 			children = (
 				D1D54CD12951F1250045A25C /* CartView.swift */,
 				D1D54CD82951F1EB0045A25C /* ItemView.swift */,
+				D17520F1295C9472006A9853 /* Slider.swift */,
+				D1A4630A295F2AF100593E4D /* descriptionBox.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -653,14 +692,19 @@
 			buildActionMask = 2147483647;
 			files = (
 				005079762948C11B005A7F91 /* MainScreen.swift in Sources */,
+				D17520F2295C9472006A9853 /* Slider.swift in Sources */,
 				D19E72F1294A100600135F83 /* FocusLogic.swift in Sources */,
 				005079772948C11B005A7F91 /* ListCard.swift in Sources */,
 				001D1806293B350B0059CBA3 /* AppDelegate.swift in Sources */,
 				001D17D6293B30670059CBA3 /* ContentView.swift in Sources */,
 				001D182B293E8D200059CBA3 /* NotificationCentre.swift in Sources */,
+				D1A46309295EDEAD00593E4D /* LocationViewModel.swift in Sources */,
 				D19E72F3294A13AE00135F83 /* DeliveryDataModel.swift in Sources */,
 				D146136F294B609F00DFABD4 /* PickUPView.swift in Sources */,
+				D17520F5295CB166006A9853 /* MapView.swift in Sources */,
 				005079642948BF4A005A7F91 /* OtpScreen.swift in Sources */,
+				D1A4630B295F2AF100593E4D /* descriptionBox.swift in Sources */,
+				D17520F8295CB6C4006A9853 /* MapViewModel.swift in Sources */,
 				D1D54CD02951F0C30045A25C /* CartModel.swift in Sources */,
 				005079842948C25B005A7F91 /* Custome Card.swift in Sources */,
 				005079662948BF51005A7F91 /* OTPViewModel.swift in Sources */,

@@ -147,7 +147,7 @@ struct MainView:View
                         HStack
                         {
                             NavigationLink(
-                                destination:PickupLocation(changeSegment:$changeSegment , isSelected:$isSelected)
+                                destination:PickupLocation()
                                             
                                     ) {
                                         Image("icon_bike_ride")

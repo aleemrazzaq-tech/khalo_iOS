@@ -58,12 +58,17 @@ extension CustomeNavigationBar
     }
     private var titleSection:some View
     {
-        VStack(spacing:4)
-        {
+      
+            NavigationLink(destination:PickupLocation())
+            {
+                VStack(spacing:4)
+                {
+                    
             Text("DELIVERY TO")
                 .font(.title2)
                 .fontWeight(.semibold)
             Text("Work")
+            }
             
         }
     }
